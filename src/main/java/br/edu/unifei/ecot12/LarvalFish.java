@@ -1,10 +1,14 @@
 package br.edu.unifei.ecot12;
 
 public abstract class LarvalFish {
-    
+
     private int ageDays;
     private String developmentStage;
     private double sanilityTolerance;
+    private Environment currentLocation;
+
+    
+
     public int getAgeDays() {
         return ageDays;
     }
@@ -22,6 +26,12 @@ public abstract class LarvalFish {
     }
     public void setSanilityTolerance(double sanilityTolerance) {
         this.sanilityTolerance = sanilityTolerance;
+    }
+    public Environment getCurrentLocation() {
+        return currentLocation;
+    }
+    public void setCurrentLocation(Environment currentLocation) {
+        this.currentLocation = currentLocation;
     }
 
     

@@ -1,6 +1,6 @@
 package br.edu.unifei.ecot12;
 
-public enum EnviromentType {
+public enum EnvironmentType {
     RIVER,
     OCEAN,
     DEEP_SEA,

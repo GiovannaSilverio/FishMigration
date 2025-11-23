@@ -1,10 +1,19 @@
 package br.edu.unifei.ecot12;
 
-public class Enviroment {
+public class Environment {
     private double salinity;
     private double waterPressure;
-    private String type; 
+    private EnvironmentType type; 
     private double currentSpeed;
+
+    //constructor
+    public Environment(EnvironmentType type, double salinity, double waterPressure, double currentSpeed) {
+        this.type = type;
+        this.salinity = salinity;
+        this.waterPressure = waterPressure;
+        this.currentSpeed = currentSpeed;
+    }
+
     public double getSalinity() {
         return salinity;
     }
@@ -17,10 +26,10 @@ public class Enviroment {
     public void setWaterPressure(double waterPressure) {
         this.waterPressure = waterPressure;
     }
-    public String getType() {
+    public EnvironmentType getType() {
         return type;
     }
-    public void setType(String type) {
+    public void setType(EnvironmentType type) {
         this.type = type;
     }
     public double getCurrentSpeed() {
