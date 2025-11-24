@@ -6,6 +6,8 @@ public abstract class AdultFish {
     private Environment currentLocation;
     private MigrationBehavior migrationBehavior;
 
+    public abstract void accept(FishVisitor visitor);
+
     public void performMigration(){
         if (migrationBehavior!=null){
             migrationBehavior.migrate(this, currentLocation);
@@ -46,7 +48,4 @@ public abstract class AdultFish {
     public void setMigrationBehavior(MigrationBehavior migrationBehavior) {
         this.migrationBehavior = migrationBehavior;
     }
-
-    
-
 }

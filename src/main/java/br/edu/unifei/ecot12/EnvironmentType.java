@@ -5,5 +5,4 @@ public enum EnvironmentType {
     OCEAN,
     DEEP_SEA,
     ESTUARY
-
 }

@@ -5,9 +5,12 @@ public class AdultEel extends AdultFish {
     private boolean digestiveTractFunctional;
 
     protected AdultEel(){}
-    
 
-    //getters e setters
+    @Override
+    public void accept(FishVisitor visitor) {
+        visitor.visit(this);
+    }
+
     public double getLipidReserve() {
         return lipidReserve;
     }
@@ -23,7 +26,4 @@ public class AdultEel extends AdultFish {
     public void setDigestiveTractFunctional(boolean digestiveTractFunctional) {
         this.digestiveTractFunctional = digestiveTractFunctional;
     }
-
-    
-
 }

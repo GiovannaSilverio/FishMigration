@@ -6,7 +6,11 @@ public class AdultSalmon extends AdultFish {
 
     protected AdultSalmon(){}
 
-    //getters e setters
+    @Override
+    public void accept(FishVisitor visitor) {
+        visitor.visit(this);
+    }
+
     public double getJumpAbility() {
         return jumpAbility;
     }
@@ -22,6 +26,4 @@ public class AdultSalmon extends AdultFish {
     public void setSpawningColorIntensity(double spawningColorIntensity) {
         this.spawningColorIntensity = spawningColorIntensity;
     }
-
-    
 }
